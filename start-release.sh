@@ -38,7 +38,7 @@ fi
 
 echo "New version: ${NEW_VERSION}"
 mvn org.codehaus.mojo:versions-maven-plugin:set -DnewVersion=${NEW_VERSION} versions:commit
-git add *
+git add pom.xml
 git commit -m "Release v${NEW_VERSION}"
 git tag -a ${NEW_VERSION} -m "Release v${NEW_VERSION}"
 git push
@@ -48,6 +48,6 @@ git checkout develop
 git pull
 git merge master
 mvn org.codehaus.mojo:versions-maven-plugin:set -DnextSnapshot=true versions:commit
-git add *
+git add pom.xml
 git commit -m "Prepare for new development"
 git push

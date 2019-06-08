@@ -6,7 +6,7 @@
 
     <groupId>biz.stevens</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>usage:</version>
+    <version>0.0.1-SNAPSHOT</version>
     <properties>
         <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
         <spring-boot-admin.version>2.1.4</spring-boot-admin.version>
