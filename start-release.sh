@@ -42,6 +42,7 @@ git add pom.xml
 git commit -m "Release v${NEW_VERSION}"
 git tag -a ${NEW_VERSION} -m "Release v${NEW_VERSION}"
 git push
+git push --tags
 
 echo "prepare the next development"
 git checkout develop
@@ -51,3 +52,4 @@ mvn org.codehaus.mojo:versions-maven-plugin:set -DnextSnapshot=true versions:com
 git add pom.xml
 git commit -m "Prepare for new development"
 git push
+git push --tags
