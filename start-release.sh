@@ -5,7 +5,7 @@ git pull
 git checkout master
 git pull
 
-CURRENT_VERSION=$(xmllint --xpath "//*[local-name()='project']/*[local-name()='version']/text()" pom.xml)
+CURRENT_VERSION=$(cat pom.xml | grep -oP '(?<=<version>)((\d+\.)+(\d+))(?=.*<\/version>)' | head -1)
 
 git merge develop
 
