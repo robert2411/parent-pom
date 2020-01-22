@@ -8,9 +8,9 @@
     <artifactId>parent-pom</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <properties>
-        <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
-        <spring-boot-admin.version>2.1.4</spring-boot-admin.version>
-        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+        <spring-boot-admin.version>2.2.2.RELEASE</spring-boot-admin.version>
+        <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
