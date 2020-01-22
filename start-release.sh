@@ -5,7 +5,7 @@ git pull
 git checkout master
 git pull
 
-CURRENT_VERSION=$(cat pom.xml | grep -oP '(?<=<version>)((\d+\.)+(\d+))(?=.*<\/version>)' | head -1)
+CURRENT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
 
 git merge develop
 
